@@ -17,7 +17,7 @@ An app that allows users to view their feeds from all social media accounts in o
 [Evaluation of your app across the following attributes]
 - **Category:** Social
 - **Mobile:** Android
-- **Story:**
+- **Story:** 
 - **Market:**
 - **Habit:**
 - **Scope:**
