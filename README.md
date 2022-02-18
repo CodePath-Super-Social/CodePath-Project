@@ -154,4 +154,14 @@ Refer to the Digital Wireframes below
             }
          }
          ```
+ #### Parse network request(Create/POST) sample
+          ```kotlin
+            val apiUrl =
+            getApiUrl("API Link")
+
+        // Can specify query string params directly or through RequestParams.
+        val params = RequestParams()
+        params.put("status", tweetContent)
+        client.post(apiUrl, params, "", handler)
+         ```
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
