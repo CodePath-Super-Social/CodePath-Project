@@ -99,5 +99,11 @@ List of network requests by screen
    * (Create/POST) User creates a new post to send to Twitter and/or Reddit
 * Settings
    * (Read/GET) Authenicates the user's Twitter and Reddit accounts
+* Detailed Reddit Item
+   * (Read/GET) Gets the current user, post user, images, and comments
+   * (Create/POST) User can reply to the comment and/or like the post
+* Detailed Twitter Item
+   * (Read/GET) Gets the current user, tweet, tweet's user, and time created
+   * (Create/POST) User can like, retweet, and share the tweet.
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
