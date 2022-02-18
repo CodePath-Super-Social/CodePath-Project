@@ -91,6 +91,26 @@ Refer to the Digital Wireframes below
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
+#### Create Post
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| Author of the post |
+   | image         | File     | image that user posts(optional) |
+   | caption       | String   | image caption by author |
+   | createdAt     | DateTime | date when post is created (default field) |
+
+
+#### Get Post
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| Author of the post |
+   | image         | File     | image that user posts(optional) |
+   | caption       | String   | image caption by author |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | captionLink   | String   | user views caption through browser |
 ### Networking
 List of network requests by screen
 * Feed
