@@ -92,6 +92,12 @@ Refer to the Digital Wireframes below
 ### Models
 [Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
+List of network requests by screen
+* Feed
+   * (Read/GET) Query all posts for the user's Twitter and Reddit accounts
+* Create post
+   * (Create/POST) User creates a new post to send to Twitter and/or Reddit
+* Settings
+   * (Read/GET) Authenicates the user's Twitter and Reddit accounts
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
