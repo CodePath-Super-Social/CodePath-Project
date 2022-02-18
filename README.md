@@ -74,10 +74,16 @@ An app that allows users to view their feeds from all social media accounts in o
    * Login -> OAuth
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+Refer to the Digital Wireframes below
 
 ### [BONUS] Digital Wireframes & Mockups
+<img width="231" alt="Settings" src="https://user-images.githubusercontent.com/78000116/154627513-b038cfc2-8129-471c-98cc-35a66e5e1036.png"> |
+<img width="234" alt="Feed" src="https://user-images.githubusercontent.com/78000116/154627545-f6684430-6647-4113-b47c-1bca22fab723.png">
+<img width="232" alt="Create Post" src="https://user-images.githubusercontent.com/78000116/154627561-ea373b74-2dd4-4a1b-ac36-5499397c61e2.png">
+<img width="233" alt="Detailed Twiiter Item" src="https://user-images.githubusercontent.com/78000116/154627568-867f844a-4bb1-4347-b84d-8c6ca4c625b2.png">
+<img width="235" alt="Detailed Reddit Item" src="https://user-images.githubusercontent.com/78000116/154627573-80f1526e-340d-49d1-8eb1-35dc920bda3b.png">
+
+
 
 ### [BONUS] Interactive Prototype
 
