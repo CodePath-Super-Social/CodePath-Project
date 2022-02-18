@@ -74,7 +74,7 @@ An app that allows users to view their feeds from all social media accounts in o
    * Login -> OAuth
 
 ## Wireframes
-Refer to the Digital Wireframes below
+<img src="wireframe.png" width=800><br>
 
 ### [BONUS] Digital Wireframes & Mockups
 <img width="231" alt="Settings" src="https://user-images.githubusercontent.com/78000116/154627513-b038cfc2-8129-471c-98cc-35a66e5e1036.png"> |
