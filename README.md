@@ -165,3 +165,15 @@ Refer to the Digital Wireframes below
         client.post(apiUrl, params, "", handler)
          ```
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### Reddit API
+* Base API URL https://www.reddit.com/
+   | HTTP Verb         | Endpoint | Description |
+   | ------------- | -------- | ------------|
+   | GET           | /api/v1/me   | Returns the identity of the user. |
+   | GET           | /best   | Get a listing of links by best links. |
+   | GET           | /r/subreddit/new   | Get a listing of links by new links. |
+   | GET           | /r/subreddit/api/info   | Return a listing of things specified by their fullnames. |
+   | POST          | /api/comment   | Submit a new comment or reply to a message. |
+
+#### Twitter API
+* Base API URL https://api.twitter.com/1.1/
