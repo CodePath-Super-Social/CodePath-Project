@@ -177,3 +177,8 @@ Refer to the Digital Wireframes below
 
 #### Twitter API
 * Base API URL https://api.twitter.com/1.1/
+   | HTTP Verb         | Endpoint | Description |
+   | ------------- | -------- | ------------|
+   | GET           | /search/tweets.json   | Returns a collection of relevant Tweets matching a specified query. |
+   | POST          | /statuses/update.json   | Updates the authenticating user's current status, also known as Tweeting. |
+   | GET           | /users/show.json   | Returns a variety of information about the user specified by the required user_id or screen_name parameter. |
