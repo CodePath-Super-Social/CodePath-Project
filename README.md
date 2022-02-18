@@ -164,7 +164,7 @@ Refer to the Digital Wireframes below
         params.put("status", tweetContent)
         client.post(apiUrl, params, "", handler)
          ```
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- API endpoints
 #### Reddit API
 * Base API URL https://www.reddit.com/
    | HTTP Verb         | Endpoint | Description |
