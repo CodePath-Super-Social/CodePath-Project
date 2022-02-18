@@ -126,7 +126,7 @@ Refer to the Digital Wireframes below
    | shares        | Integer  | Number of shares/retweets a post has |
 
 ### Networking
-List of network requests by screen
+#### List of network requests by screen
 * Feed
    * (Read/GET) Query all posts for the user's Twitter and Reddit accounts
 * Create post
@@ -139,5 +139,19 @@ List of network requests by screen
 * Detailed Twitter Item
    * (Read/GET) Gets the current user, tweet, tweet's user, and time created
    * (Create/POST) User can like, retweet, and share the tweet.
-- [Create basic snippets for each Parse network request]
+#### Parse network request(Read/GET) sample
+
+         ```kotlin
+         val query: ParseQuery<Post> = ParseQuery.getQuery
+         query.include("user")
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, e: ParseException?)
+            if (e != null) { 
+               Log.e("Error getting post")
+            } else if let posts = posts {
+               Log.i("Successfully retrieved posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
