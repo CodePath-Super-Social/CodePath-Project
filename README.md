@@ -111,6 +111,20 @@ Refer to the Digital Wireframes below
    | caption       | String   | image caption by author |
    | createdAt     | DateTime | date when post is created (default field) |
    | captionLink   | String   | user views caption through browser |
+   
+   
+#### Detailed Post(Extends Create Post)
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| Author of the post |
+   | currentUser   | Pointer to User| User logged into Reddit/Twitter |
+   | image         | File     | image that user posts(optional) |
+   | caption       | String   | post by author |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | likes         | Integer  | Number of likes a post has|
+   | shares        | Integer  | Number of shares/retweets a post has |
+
 ### Networking
 List of network requests by screen
 * Feed
