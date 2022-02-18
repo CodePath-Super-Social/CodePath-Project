@@ -86,6 +86,7 @@ Refer to the Digital Wireframes below
 
 
 ### [BONUS] Interactive Prototype
+<img src='interactiveprototype.gif' title='Interactive Prototype' width='' alt='Interactive Prototype' />
 
 ## Schema 
 [This section will be completed in Unit 9]
