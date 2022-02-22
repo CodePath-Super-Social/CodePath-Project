@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margins -->
+    <dimen name="stdmargin">10dp</dimen>
+
+    <!-- Headings -->
+    <dimen name="h1">30sp</dimen>
+    <dimen name="h2">25sp</dimen>
+
+    <dimen name="button">20sp</dimen>
+</resources>

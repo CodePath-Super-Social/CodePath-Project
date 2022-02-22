@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">SuperSocial</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="twitter">Twitter</string>
+    <string name="reddit">Reddit</string>
+
+    <string name="twitter_switch">Post to Twitter</string>
+    <string name="reddit_switch">Post to Reddit</string>
+
+    <string name="login_btn">Log In</string>
+    <string name="logout_btn">Log Out</string>
+    <string name="post_btn">Post!</string>
+
 </resources>
