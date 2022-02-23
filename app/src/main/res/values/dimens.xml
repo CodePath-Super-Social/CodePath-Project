@@ -2,6 +2,7 @@
 <resources>
     <!-- Margins -->
     <dimen name="stdmargin">10dp</dimen>
+    <dimen name="item_margin">5dp</dimen>
 
     <!-- Headings -->
     <dimen name="h1">30sp</dimen>
