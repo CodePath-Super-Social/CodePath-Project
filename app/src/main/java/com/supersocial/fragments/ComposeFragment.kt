@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.supersocial.R
+import com.supersocial.TweetsAdapter
+import com.supersocial.models.Tweet
 
 class ComposeFragment : Fragment() {
     override fun onCreateView(
