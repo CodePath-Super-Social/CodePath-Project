@@ -9,4 +9,5 @@
     <dimen name="h2">25sp</dimen>
 
     <dimen name="button">20sp</dimen>
+    <dimen name="icon">30dp</dimen>
 </resources>
