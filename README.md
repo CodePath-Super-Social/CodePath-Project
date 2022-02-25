@@ -36,6 +36,7 @@ An app that allows users to view their feeds from all social media accounts in o
 * [ ] Users can crosspost to selected social media feeds
     * [ ] Users can take photos with their camera for posts
 * [ ] Users can pull-down to refresh feeds(In-Progress)
+* [x] Users can switch fragments with bottom navigation bar
 
 **Optional Nice-to-have Stories**
 
