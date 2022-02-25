@@ -8,6 +8,7 @@ Original App Design Project - README
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
+3. [Milestone1](#Milestone1)
 
 ## Overview
 ### Description
@@ -28,13 +29,14 @@ An app that allows users to view their feeds from all social media accounts in o
 **Required Must-have Stories**
 
 * [ ] Users can log in to Reddit
-* [ ] Users can log in to Twitter
+* [ ] Users can log in to Twitter(In-Progress)
 * [ ] Users can view their Reddit feed
-* [ ] Users can view their Twitter feed
+* [ ] Users can view their Twitter feed(In-Progress)
 * [ ] Feeds have infinite pagination
 * [ ] Users can crosspost to selected social media feeds
     * [ ] Users can take photos with their camera for posts
-* [ ] Users can pull-down to refresh feeds
+* [ ] Users can pull-down to refresh feeds(In-Progress)
+* [x] Users can switch fragments with bottom navigation bar
 
 **Optional Nice-to-have Stories**
 
@@ -183,3 +185,9 @@ An app that allows users to view their feeds from all social media accounts in o
    | GET           | /search/tweets.json   | Returns a collection of relevant Tweets matching a specified query. |
    | POST          | /statuses/update.json   | Updates the authenticating user's current status, also known as Tweeting. |
    | GET           | /users/show.json   | Returns a variety of information about the user specified by the required user_id or screen_name parameter. |
+   
+  ## Milestone1
+  
+  ![Milestone1](https://user-images.githubusercontent.com/78000116/155666202-447a8363-8877-4b3f-a529-ff073db576f2.gif)
+
+  

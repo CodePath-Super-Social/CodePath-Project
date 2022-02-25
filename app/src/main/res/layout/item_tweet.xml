@@ -77,26 +77,26 @@
 
         <ImageView
             android:id="@+id/btnComment"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             tools:srcCompat="@tools:sample/avatars" />
 
         <ImageView
             android:id="@+id/btnRetweet"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             tools:srcCompat="@tools:sample/avatars" />
 
         <ImageView
             android:id="@+id/btnLike"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             tools:srcCompat="@tools:sample/avatars" />
 
         <ImageView
             android:id="@+id/btnShare"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 
