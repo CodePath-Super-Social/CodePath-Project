@@ -14,5 +14,8 @@
 
 
     <string name="sample_desc">An app that allows users to view their feeds from all social media accounts in one platform. For now, users can view Reddit and Twitter feeds. More social media platforms will be added later.</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_post">Post</string>
+    <string name="nav_settings">Settings</string>
 
 </resources>
