@@ -16,6 +16,7 @@ import com.google.firebase.auth.OAuthProvider;
 
 public class SettingsActivity extends AppCompatActivity {
     private static final String TAG = "SettingsActivity";
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class SettingsActivity extends AppCompatActivity {
         OAuthProvider.Builder provider = OAuthProvider.newBuilder("twitter.com");
 
 
-        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
 
         Task<AuthResult> pendingResultTask = firebaseAuth.getPendingAuthResult();
         if (pendingResultTask != null) {

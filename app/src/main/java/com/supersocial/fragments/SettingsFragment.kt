@@ -32,5 +32,10 @@ class SettingsFragment : Fragment() {
             val intent = Intent(activity, SettingsActivity::class.java)
             startActivity(intent)
         }
+
+        view.findViewById<Button>(R.id.btnTwitterLogout).setOnClickListener {
+            val intent = Intent(activity, SettingsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
