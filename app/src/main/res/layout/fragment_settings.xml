@@ -39,6 +39,17 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvTwitterSetting" />
 
+            <Button
+                android:id="@+id/btnTwitterLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout_btn"
+                android:textSize="@dimen/button"
+                android:layout_margin="@dimen/stdmargin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnTwitterLogin" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -69,7 +80,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvRedditSetting" />
 
-
+            <Button
+                android:id="@+id/btnRedditLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout_btn"
+                android:textSize="@dimen/button"
+                android:layout_margin="@dimen/stdmargin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnRedditLogin" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
