@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SuperSocial">
         <activity
-            android:name=".SettingsActivity"
+            android:name=".LogoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

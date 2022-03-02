@@ -2,20 +2,28 @@ package com.supersocial
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
 import com.supersocial.fragments.ComposeFragment
 import com.supersocial.fragments.FeedFragment
 import com.supersocial.fragments.SettingsFragment
 
 class MainActivity : AppCompatActivity() {
 
+    val TAG = "MainActivity"
+
     lateinit var bottomNav : BottomNavigationView
+
+    lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        firebaseAuth = FirebaseAuth.getInstance()
 
         val fragmentManager : FragmentManager = supportFragmentManager
 
@@ -45,6 +53,17 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        val firebaseUser = firebaseAuth.getCurrentUser()
+        if (firebaseUser != null) {
+            Log.i(TAG, "there's user currently signed in")
+        } else {
+            Log.i(TAG, "nobody's signed in rn")
+        }
     }
 
 }
