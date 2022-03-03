@@ -42,7 +42,6 @@
                     android:id="@+id/tvTwtUsername"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/item_margin"
                     android:text="\@username" />
 
             </LinearLayout>
@@ -55,7 +54,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/TwtInfoBar"
                 app:layout_constraintTop_toTopOf="@+id/TwtInfoBar"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@drawable/ic_vector_follow" />
 
             <TextView
                 android:id="@+id/tvTwtDescription"
@@ -89,9 +88,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/ivImage" />
 
             <!-- Interaction Buttons -->
-            <!-- Can comment out if not implemented -->
-            <!-- TODO: Add Twitter Interaction Icons -->
-
             <LinearLayout
                 android:id="@+id/TwtInteractionBar"
                 android:layout_width="0dp"
@@ -104,29 +100,36 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvTwtTimestamp">
 
+                <!-- TODO: Add analytic numbers -->
                 <ImageView
                     android:id="@+id/btnComment"
                     android:layout_width="@dimen/icon"
                     android:layout_height="@dimen/icon"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:layout_weight="1"
+                    tools:srcCompat="@drawable/vector_compose_dm_fab" />
 
                 <ImageView
                     android:id="@+id/btnRetweet"
                     android:layout_width="@dimen/icon"
                     android:layout_height="@dimen/icon"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:layout_weight="1"
+                    tools:srcCompat="@drawable/ic_vector_retweet_stroke" />
 
                 <ImageView
                     android:id="@+id/btnLike"
                     android:layout_width="@dimen/icon"
                     android:layout_height="@dimen/icon"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:layout_weight="1"
+                    tools:srcCompat="@drawable/ic_vector_heart_stroke" />
 
+                <!-- TODO: Find better icon for share -->
                 <ImageView
                     android:id="@+id/btnShare"
                     android:layout_width="@dimen/icon"
                     android:layout_height="@dimen/icon"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:layout_weight="1"
+                    tools:srcCompat="@android:drawable/ic_menu_upload"
+                    app:tint="@color/black" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
