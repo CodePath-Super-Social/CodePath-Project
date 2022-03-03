@@ -22,27 +22,28 @@ import org.json.JSONException
 class FeedFragment : Fragment() {
 
     // TweetClient for Twitter
-    lateinit var TweetClient: TwitterClient
+   // lateinit var TweetClient: TwitterClient
 
     // rvPosts for the Recyclerview
-    lateinit var rvPosts: RecyclerView
+   // lateinit var rvPosts: RecyclerView
 
     // TwitterAdapter to populate recyclerview
-    lateinit var TwitterAdapter: TweetsAdapter
+   // lateinit var TwitterAdapter: TweetsAdapter
 
     // Holds all the tweets displayed
-    val allTweets = ArrayList<Tweet>()
+   // val allTweets = ArrayList<Tweet>()
 
     // Used to refresh tweets
-    lateinit var swipeContainer: SwipeRefreshLayout
+    //lateinit var swipeContainer: SwipeRefreshLayout
 
     // Inflates the fragment feed layout
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_feed, container, false)
+        return inflater.inflate(R.layout.empty_feed, container, false)
     }
 
+    /*
     // Used to populate timeline
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -114,4 +115,5 @@ class FeedFragment : Fragment() {
 
 
 }
+     */
 }

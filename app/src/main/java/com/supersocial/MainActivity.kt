@@ -2,6 +2,7 @@ package com.supersocial
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -10,41 +11,43 @@ import com.supersocial.fragments.FeedFragment
 import com.supersocial.fragments.SettingsFragment
 
 class MainActivity : AppCompatActivity() {
+    lateinit var bottomNav : BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val fragmentManager : FragmentManager = supportFragmentManager
 
-        val fragmentManager: FragmentManager = supportFragmentManager
+        val homeFragment = FeedFragment()
+        val postFragment = ComposeFragment()
+        val settingsFragment = SettingsFragment()
 
-        findViewById<BottomNavigationView>(R.id.bottom_navigation).setOnItemSelectedListener {
-                item ->
+        bottomNav = findViewById(R.id.bottom_navigation)
 
-            var fragmentToShow: Fragment? = null
-            when(item.itemId) {
+        bottomNav.setOnItemSelectedListener { it ->
+            lateinit var fragment : Fragment
+            when (it.itemId) {
                 R.id.action_home -> {
-                    // Navigate to the home screen
-                    fragmentToShow = FeedFragment()
-                }
-                R.id.action_compose -> {
-                    // Navigate to the Compose screen
-                    fragmentToShow = ComposeFragment()
-                }
-                R.id.action_profile -> {
-                    // Navigate to the Profile screen
-                    fragmentToShow = SettingsFragment()
+                    fragment = homeFragment
+                    Toast.makeText(this, "Feed is empty. Login to view your feed.", Toast.LENGTH_SHORT).show()
                 }
 
-            }
-            if (fragmentToShow != null) {
-                fragmentManager.beginTransaction().replace(R.id.flContainer, fragmentToShow).commit()
-            }
+                R.id.action_post -> {
+                    fragment = postFragment
+                }
 
-            // Return true to say that we've handled this user interaction on the item
+                R.id.action_settings -> {
+                    fragment = settingsFragment
+                }
+            }
+            fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit()
+            // Return true to tell that we've handled this
             true
         }
 
         // Set default selection
-        findViewById<BottomNavigationView>(R.id.bottom_navigation).selectedItemId = R.id.action_profile
+        findViewById<BottomNavigationView>(R.id.bottom_navigation).selectedItemId = R.id.action_settings
+
     }
 }
