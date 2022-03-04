@@ -9,6 +9,7 @@ Original App Design Project - README
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
 3. [Milestone1](#Milestone1)
+4. [Milestone2](#Milestone2)
 
 ## Overview
 ### Description
@@ -189,5 +190,10 @@ An app that allows users to view their feeds from all social media accounts in o
   ## Milestone1
   
   ![Milestone1](https://user-images.githubusercontent.com/78000116/155666202-447a8363-8877-4b3f-a529-ff073db576f2.gif)
+  
+  ## Milestone2
+  
+  ![Milestone2](https://user-images.githubusercontent.com/78000116/156718674-44f1c226-7ac4-440d-b862-91dcb276cfdb.gif)
+
 
   
