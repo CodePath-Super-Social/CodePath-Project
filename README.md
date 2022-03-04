@@ -192,6 +192,7 @@ An app that allows users to view their feeds from all social media accounts in o
   ![Milestone1](https://user-images.githubusercontent.com/78000116/155666202-447a8363-8877-4b3f-a529-ff073db576f2.gif)
   
   ## Milestone2
+  Note: We have most of our front-end finished but are a little behind on the back-end. We should still be able to finish everything by next week.
   
   ![Milestone2](https://user-images.githubusercontent.com/78000116/156718674-44f1c226-7ac4-440d-b862-91dcb276cfdb.gif)
 
