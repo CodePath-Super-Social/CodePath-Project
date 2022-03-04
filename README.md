@@ -28,12 +28,12 @@ An app that allows users to view their feeds from all social media accounts in o
 
 **Required Must-have Stories**
 
-* [ ] Users can log in to Reddit
+* [ ] Users can log in to Reddit(In-Progress)
 * [ ] Users can log in to Twitter(In-Progress)
-* [ ] Users can view their Reddit feed
+* [ ] Users can view their Reddit feed(In-Progress)
 * [ ] Users can view their Twitter feed(In-Progress)
-* [ ] Feeds have infinite pagination
-* [ ] Users can crosspost to selected social media feeds
+* [ ] Feeds have infinite pagination(In-Progress)
+* [ ] Users can crosspost to selected social media feeds(In-Progress)
     * [ ] Users can take photos with their camera for posts
 * [ ] Users can pull-down to refresh feeds(In-Progress)
 * [x] Users can switch fragments with bottom navigation bar
