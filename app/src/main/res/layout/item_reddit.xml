@@ -21,7 +21,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginStart="@dimen/item_margin"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/item_margin"
+        app:layout_constraintEnd_toStartOf="@id/RdtIcon"
         app:layout_constraintStart_toEndOf="@+id/ivRdtAvatar"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -51,6 +52,14 @@
 
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/RdtIcon"
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        tools:srcCompat="@drawable/rdt_app_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <TextView
         android:id="@+id/tvRdtTitle"
         android:layout_width="match_parent"
@@ -76,13 +85,13 @@
 
     <!-- Interaction Buttons -->
     <!-- Can comment out if not implemented -->
-    <!-- TODO: Add Reddit Interaction Icons -->
 
     <LinearLayout
         android:id="@+id/RdtInteractionBar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:weightSum="4"
         android:layout_marginTop="@dimen/item_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,25 +102,32 @@
             android:id="@+id/btnUpvote"
             android:layout_width="@dimen/icon"
             android:layout_height="@dimen/icon"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/rdt_upvote_icon" />
 
         <ImageView
             android:id="@+id/btnDownvote"
             android:layout_width="@dimen/icon"
             android:layout_height="@dimen/icon"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_weight="1"
+            android:rotation="180"
+            app:tint="#5166AD"
+            tools:srcCompat="@drawable/rdt_upvote_icon" />
 
         <ImageView
             android:id="@+id/btnComment"
             android:layout_width="@dimen/icon"
             android:layout_height="@dimen/icon"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/vector_compose_dm_fab" />
 
         <ImageView
             android:id="@+id/btnShare"
             android:layout_width="@dimen/icon"
             android:layout_height="@dimen/icon"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_weight="1"
+            tools:srcCompat="@android:drawable/ic_menu_upload"
+            app:tint="@color/black"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

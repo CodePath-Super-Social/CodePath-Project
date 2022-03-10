@@ -7,10 +7,10 @@
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/TwtToolbar"
+        android:id="@+id/RdtToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/twitter_blue"
+        android:background="@color/reddit_red"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ToolbarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,13 +21,12 @@
         <ImageView
             android:layout_width="?attr/actionBarSize"
             android:layout_height="?attr/actionBarSize"
-            tools:srcCompat="@drawable/twt_app_icon"
-            app:tint="@color/white"/>
+            tools:srcCompat="@drawable/rdt_app_icon"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:padding="@dimen/stdmargin"
-            android:text="Twitter"
+            android:text="Reddit"
             app:style="@style/Toolbar.TitleText" />
     </androidx.appcompat.widget.Toolbar>
 
@@ -35,13 +34,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/stdmargin"
-        app:layout_constraintTop_toBottomOf="@id/TwtToolbar"
+        app:layout_constraintTop_toBottomOf="@id/RdtToolbar"
         app:layout_constraintBottom_toBottomOf="parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/ivTwtAvatar"
+                android:id="@+id/ivRdtAvatar"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:scaleType="centerCrop"
@@ -50,41 +50,43 @@
                 tools:srcCompat="@tools:sample/avatars" />
 
             <LinearLayout
-                android:id="@+id/TwtInfoBar"
+                android:id="@+id/RdtInfoBar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_marginStart="@dimen/item_margin"
-                app:layout_constraintEnd_toStartOf="@id/btnFollow"
-                app:layout_constraintStart_toEndOf="@+id/ivTwtAvatar"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/ivRdtAvatar"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/tvTwtName"
+                    android:id="@+id/tvRdtSub"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Twitter Name" />
+                    android:textStyle="bold"
+                    android:text="r/SubReddit" />
 
                 <TextView
-                    android:id="@+id/tvTwtUsername"
+                    android:id="@+id/tvRdtUsername"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="\@username" />
+                    android:text="u/username" />
 
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/btnFollow"
-                android:layout_width="@dimen/icon"
-                android:layout_height="@dimen/icon"
-                app:layout_constraintBottom_toBottomOf="@+id/TwtInfoBar"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/TwtInfoBar"
-                app:layout_constraintTop_toTopOf="@+id/TwtInfoBar"
-                tools:srcCompat="@drawable/ic_vector_follow" />
+            <TextView
+                android:id="@+id/tvRdtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/h3"
+                android:text="@string/sample_title"
+                android:layout_marginTop="@dimen/item_margin"
+                app:layout_constraintTop_toBottomOf="@id/ivRdtAvatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
 
             <TextView
-                android:id="@+id/tvTwtDescription"
+                android:id="@+id/tvRdtDescription"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/sample_desc"
@@ -92,7 +94,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ivTwtAvatar" />
+                app:layout_constraintTop_toBottomOf="@+id/tvRdtTitle" />
 
             <ImageView
                 android:id="@+id/ivImage"
@@ -100,11 +102,11 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvTwtDescription"
+                app:layout_constraintTop_toBottomOf="@+id/tvRdtDescription"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
-                android:id="@+id/tvTwtTimestamp"
+                android:id="@+id/tvRdtTimestamp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="24 Feb 2022 9:59 PM"
@@ -116,7 +118,7 @@
 
             <!-- Interaction Buttons -->
             <LinearLayout
-                android:id="@+id/TwtInteractionBar"
+                android:id="@+id/RdtInteractionBar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -125,29 +127,31 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvTwtTimestamp">
+                app:layout_constraintTop_toBottomOf="@+id/tvRdtTimestamp">
 
                 <!-- TODO: Add analytic numbers -->
+                <ImageView
+                    android:id="@+id/btnUpvote"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:layout_weight="1"
+                    tools:srcCompat="@drawable/rdt_upvote_icon" />
+
+                <ImageView
+                    android:id="@+id/btnDownvote"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:layout_weight="1"
+                    android:rotation="180"
+                    app:tint="#5166AD"
+                    tools:srcCompat="@drawable/rdt_upvote_icon" />
+
                 <ImageView
                     android:id="@+id/btnComment"
                     android:layout_width="@dimen/icon"
                     android:layout_height="@dimen/icon"
                     android:layout_weight="1"
                     tools:srcCompat="@drawable/vector_compose_dm_fab" />
-
-                <ImageView
-                    android:id="@+id/btnRetweet"
-                    android:layout_width="@dimen/icon"
-                    android:layout_height="@dimen/icon"
-                    android:layout_weight="1"
-                    tools:srcCompat="@drawable/ic_vector_retweet_stroke" />
-
-                <ImageView
-                    android:id="@+id/btnLike"
-                    android:layout_width="@dimen/icon"
-                    android:layout_height="@dimen/icon"
-                    android:layout_weight="1"
-                    tools:srcCompat="@drawable/ic_vector_heart_stroke" />
 
                 <!-- TODO: Find better icon for share -->
                 <ImageView
