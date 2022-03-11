@@ -26,8 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:padding="@dimen/stdmargin"
-            android:text="Reddit"
-            app:style="@style/Toolbar.TitleText" />
+            android:text="Reddit" />
     </androidx.appcompat.widget.Toolbar>
 
     <ScrollView

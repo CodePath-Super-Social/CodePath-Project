@@ -27,8 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:padding="@dimen/stdmargin"
-            android:text="Twitter"
-            app:style="@style/Toolbar.TitleText" />
+            android:text="Twitter" />
     </androidx.appcompat.widget.Toolbar>
 
     <ScrollView

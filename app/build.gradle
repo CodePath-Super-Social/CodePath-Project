@@ -56,6 +56,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // dependency for reddit login
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
 }
 repositories {
     mavenCentral()
