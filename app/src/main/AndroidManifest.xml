@@ -12,10 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SuperSocial">
         <activity
-            android:name=".LogoutActivity"
-            android:exported="false" />
+            android:name=".RedditLoginActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:host="localhost"
+                    android:scheme="http"
+                    android:path="/" />
+            </intent-filter>
+        </activity>
+
         <activity
-            android:name=".LoginActivity"
+            android:name=".TwitterLoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

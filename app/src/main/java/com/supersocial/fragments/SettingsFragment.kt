@@ -1,6 +1,7 @@
 package com.supersocial.fragments
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +12,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.supersocial.MainActivity
 import com.supersocial.R
-import com.supersocial.LoginActivity
+import com.supersocial.TwitterLoginActivity
 
 
 private const val TAG = "Settings Segment"
@@ -35,7 +36,7 @@ class SettingsFragment : Fragment() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         view.findViewById<Button>(R.id.btnTwitterLogin).setOnClickListener {
-            val intent = Intent(activity, LoginActivity::class.java)
+            val intent = Intent(activity, TwitterLoginActivity::class.java)
             startActivity(intent)
         }
 
@@ -46,7 +47,23 @@ class SettingsFragment : Fragment() {
             val i = Intent(activity, MainActivity::class.java)
             startActivity(i)
 
-            Toast.makeText(activity, "logged out", Toast.LENGTH_LONG).show()
+            Toast.makeText(activity, "twitter logged out", Toast.LENGTH_LONG).show()
+        }
+
+        view.findViewById<Button>(R.id.btnRedditLogin).setOnClickListener {
+            val CLIENT_ID = "I-OVFMnKBAf0hT7lauH-aQ";
+
+            val REDIRECT_URI =
+                "http://localhost:8080";
+
+            val STATE = "MY_RANDOM_STRING_1";
+
+            val AUTH_URL = "https://www.reddit.com/api/v1/authorize.compact?client_id=$CLIENT_ID" +
+                    "&response_type=code&state=$STATE&redirect_uri=$REDIRECT_URI&" +
+                    "duration=permanent&scope=identity";
+
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(AUTH_URL))
+            startActivity(intent)
         }
     }
 }

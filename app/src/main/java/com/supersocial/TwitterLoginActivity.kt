@@ -8,11 +8,11 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.OAuthProvider
 
-class LoginActivity : AppCompatActivity() {
+class TwitterLoginActivity : AppCompatActivity() {
     private val TAG = "Settings Activity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_twitter_login)
 
         val firebaseAuth = FirebaseAuth.getInstance()
         val provider = OAuthProvider.newBuilder("twitter.com")
@@ -48,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
                     // authResult.getCredential().getAccessToken().
                     // The OAuth secret can be retrieved by calling:
                     // authResult.getCredential().getSecret().
-                    Toast.makeText(this, "logged in", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "twitter logged in", Toast.LENGTH_LONG).show()
                     // if logged in go back to main activity
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
