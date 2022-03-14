@@ -10,6 +10,7 @@ Original App Design Project - README
 2. [Schema](#Schema)
 3. [Milestone1](#Milestone1)
 4. [Milestone2](#Milestone2)
+5. [Milestone3](#Milestone3)
 
 ## Overview
 ### Description
@@ -29,14 +30,14 @@ An app that allows users to view their feeds from all social media accounts in o
 
 **Required Must-have Stories**
 
-* [ ] Users can log in to Reddit(In-Progress)
-* [ ] Users can log in to Twitter(In-Progress)
+* [x] Users can log in to Reddit
+* [x] Users can log in to Twitter
 * [ ] Users can view their Reddit feed(In-Progress)
-* [ ] Users can view their Twitter feed(In-Progress)
-* [ ] Feeds have infinite pagination(In-Progress)
+* [x] Users can view their Twitter feed
+* [x] Feeds have infinite pagination
 * [ ] Users can crosspost to selected social media feeds(In-Progress)
     * [ ] Users can take photos with their camera for posts
-* [ ] Users can pull-down to refresh feeds(In-Progress)
+* [x] Users can pull-down to refresh feeds
 * [x] Users can switch fragments with bottom navigation bar
 
 **Optional Nice-to-have Stories**
@@ -195,6 +196,12 @@ An app that allows users to view their feeds from all social media accounts in o
   Note: We have most of our front-end finished but are a little behind on the back-end. We should still be able to finish everything by next week.
   
   ![Milestone2](https://user-images.githubusercontent.com/78000116/156718674-44f1c226-7ac4-440d-b862-91dcb276cfdb.gif)
+  
+  ## Milestone3
+  Almost all our required stories are completed, but we couldn't quite complete Reddit Feed and CrossPosting
+  
+  ![Milestone3](https://user-images.githubusercontent.com/78000116/158117759-53475b2b-01c5-47a3-88a2-b13d83c5cf9a.gif)
+
 
 
   
