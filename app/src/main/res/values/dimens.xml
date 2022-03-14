@@ -4,4 +4,17 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <!-- Margins -->
+    <dimen name="stdmargin">10dp</dimen>
+    <dimen name="item_margin">5dp</dimen>
+
+    <!-- Headings -->
+    <dimen name="h1">30sp</dimen>
+    <dimen name="h2">25sp</dimen>
+    <dimen name="h3">20sp</dimen>
+    <dimen name="h4">15sp</dimen>
+
+    <dimen name="button">20sp</dimen>
+    <dimen name="icon">30dp</dimen>
+
 </resources>
