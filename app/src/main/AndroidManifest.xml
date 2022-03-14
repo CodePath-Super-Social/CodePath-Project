@@ -16,9 +16,24 @@
         <activity
             android:name="com.codepath.apps.supersocial.ComposeActivity"
             android:exported="false" />
+
+
         <activity
             android:name="com.codepath.apps.supersocial.TimelineActivity"
             android:exported="false" />
+
+        <activity android:name=".RedditLoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:host="localhost"
+                    android:scheme="http"
+                    android:path="/" />
+            </intent-filter>
+        </activity>
 
 
 
